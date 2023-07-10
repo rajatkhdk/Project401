@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BookMyHotel</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <h2>BookMyHotel</h2>
+  <form action="booking.php" method="post" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <span id="nameError" class="error"></span>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error"></span>
+
+    <label for="check-in">Check-in Date:</label>
+    <input type="date" id="check-in" name="check-in" required>
+    <span id="checkInError" class="error"></span>
+
+    <label for="check-out">Check-out Date:</label>
+    <input type="date" id="check-out" name="check-out" required>
+    <span id="checkOutError" class="error"></span>
+
+    <label for="room-type">Room Type:</label>
+    <select id="room-type" name="room-type" required>
+      <option value="">Select Room Type</option>
+      <option value="single">Single</option>
+      <option value="double">Double</option>
+      <option value="suite">Suite</option>
+    </select>
+    <span id="roomTypeError" class="error"></span>
+
+    <input type="submit" value="Book Now">
+  </form>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var checkIn = document.getElementById('check-in').value;
+      var checkOut = document.getElementById('check-out').value;
+      var roomType = document.getElementById('room-type').value;
+
+      var isValid = true;
+
+      // Clear previous error messages
+      document.getElementById('nameError').innerHTML = '';
+      document.getElementById('emailError').innerHTML = '';
+      document.getElementById('checkInError').innerHTML = '';
+      document.getElementById('checkOutError').innerHTML = '';
+      document.getElementById('roomTypeError').innerHTML = '';
+
+      // Validate name
+      if (name.trim() === '') {
+        document.getElementById('nameError').innerHTML = 'Please enter your name';
+        isValid = false;
+      }
+
+      // Validate email
+      if (email.trim() === '') {
+        document.getElementById('emailError').innerHTML = 'Please enter your email';
+        isValid = false;
+      } else if (!isValidEmail(email)) {
+        document.getElementById('emailError').innerHTML = 'Please enter a valid email address';
+        isValid = false;
+      }
+
+      // Validate check-in and check-out dates
+      if (checkIn === '') {
+        document.getElementById('checkInError').innerHTML = 'Please select a check-in date';
+        isValid = false;
+      }
+
+      if (checkOut === '') {
+        document.getElementById('checkOutError').innerHTML = 'Please select a check-out date';
+        isValid = false;
+      } else if (checkOut < checkIn) {
+        document.getElementById('checkOutError').innerHTML = 'Check-out date must be after check-in date';
+        isValid = false;
+      }
+
+      // Validate room type
+      if (roomType === '') {
+        document.getElementById('roomTypeError').innerHTML = 'Please select a room type';
+        isValid = false;
+      }
+
+      return isValid;
+    }
+
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+  </script>
+</body>
+</html>
