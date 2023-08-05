@@ -1,14 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background: url('/Users/macantosh/Desktop/Project401-1/src/Reservation/reserve.avif')no-repeat;
+    background: url('mp.webp')no-repeat;
     background-size: cover;
   }
   
   label {
     display: block;
+    margin-left: 30 px;
+    text-align: center;
     margin-bottom: 2px;
     font-weight: bold;
+  
   }
   
   input[type="text"],
