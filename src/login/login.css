@@ -12,7 +12,7 @@ font-family: "Poppins","san-serif";
 
     display: flex;
     justify-content : center;
-   align-items : center;
+    align-items : center;
     min-height: 100vh; /* yesle box lai bich ma halcha sake samma herna milne jati area*/
     background: url('6875483.jpg')no-repeat;
     font-size: 12px;
