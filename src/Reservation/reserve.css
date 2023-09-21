@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background:url(back1.jpeg)no-repeat ;
+  background:url(aa.jpeg)no-repeat ;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -9,10 +9,14 @@ body {
 .container {
   max-width: 400px;
   margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
+  /*background-color: #fff;*/
+  padding: 40px 30px;
+  border: 2px solid rgba(9, 9, 9, 0.2);
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 10px;
+
+  background: transparent;
 }
 
 h1 {
@@ -56,4 +60,29 @@ button:hover {
   padding: 15px;
   margin-top: 20px;
   border-radius: 4px;
+}
+
+#name
+{
+  border-radius: 16px;
+  background: transparent;
+  border-color: rgb(138, 137, 137);
+}
+#email
+{
+  border-radius: 16px;
+  background: transparent;
+  border-color: rgb(138, 137, 137);
+}
+#checkIn
+{
+  border-radius: 16px;
+  background: transparent;
+  border-color: rgb(138, 137, 137);
+}
+#checkOut
+{
+  border-radius: 16px;
+  background: transparent;
+  border-color: rgb(138, 137, 137);
 }
