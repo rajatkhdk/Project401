@@ -28,7 +28,7 @@ font-family: "Poppins","san-serif";
     background: transparent;
     border: 2px solid rgba(255,255,255,.2);
     backdrop-filter: blur(20px);/*blur vayena idk why*/
-    outline: none;;
+    outline: none;
     color: white;
     border-radius:10px;
     padding: 40px 30px;
@@ -64,10 +64,7 @@ margin: 20px 0 ;
   font-size:14px;
 
 }
-.ip i{/*for icon chalena*/
-   position: absolute;
-   right: 20px;
-}
+
 .remforg { 
     display: flex;
     justify-content: space-between;
