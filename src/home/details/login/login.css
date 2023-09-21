@@ -14,7 +14,7 @@ font-family: "Poppins","san-serif";
     justify-content : center;
     align-items : center;
     min-height: 100vh; /* yesle box lai bich ma halcha sake samma herna milne jati area*/
-    background: url('6875483.jpg')no-repeat;
+    background: url('aa.jpeg')no-repeat;
     font-size: 12px;
     background-size: cover;
     background-position: center;
@@ -26,10 +26,10 @@ font-family: "Poppins","san-serif";
 
     width :420px;
     background: transparent;
-    border: 2px solid rgba(255,255,255,.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);/*blur vayena idk why*/
     outline: none;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius:10px;
     padding: 40px 30px;
 
@@ -51,16 +51,16 @@ margin: 20px 0 ;
     width:100%;
     height:100%;
     background: transparent;
-    border: 2px solid rgba(255,255,255,.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     outline: none;
     border-radius: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     padding: 20px 45px 20px 20px;
 }
 .ip input::placeholder{
 
-  color: white;
+  color: rgb(0, 0, 0);
   font-size:14px;
 
 }
@@ -72,11 +72,11 @@ margin: 20px 0 ;
     margin: -15px 0 15px;
 }
 .remforg lable input{
-accent-color: white;
+accent-color: rgb(0, 0, 0);
 margin-right: 3px;
 }
 .remforg a{
-   color: white;
+   color: rgb(0, 0, 0);
    text-decoration: none;
 }
 .remforg a:hover{
@@ -85,7 +85,7 @@ margin-right: 3px;
 }
 .register a
 {
-   color: white;
+   color: rgb(0, 0, 0);
    text-decoration: none;
    font-weight: 600;
 }
@@ -99,7 +99,7 @@ margin-right: 3px;
    height: 45px;
    border: none;
    border-radius: 40px;
-   background: white;
+   background: rgb(255, 255, 255);
    outline: none;
    box-shadow: 0 0 10px rgba(0,0,0,.1);
    cursor:pointer;
@@ -112,3 +112,12 @@ margin-right: 3px;
    text-align: center;
    margin: 20px 0 15px;
 }
+
+
+
+
+
+
+
+
+
