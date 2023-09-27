@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+      <title>Home</title>
+     
+      <link rel="stylesheet" href="login.css">
+      
+    </head>
+
+
+    <body>
+        
+     
+     <!--action vanya location form ka bujhaucha get vanay unsafe insensitive 
+        data pathaune post vanya password username haru pathaune
+    enc type le large files form bata pathaune vaye tyo halne complex ho tho
+bujhna lai pathauda break gare pathayera pachi feri assemble garcha-->
+<div class="wrapper">
+    
+     <form action="index.php" method="POST" enctype="multipart/form-data">
+        
+        <h1>Login</h1>
+       
+       
+        <div class="ip">
+        <input type="text" id="namdeko1" placeholder="Username" required>
+        </div>
+        
+        <div class="ip">
+        <input type="password" placeholder="Password" id="namdeko2" required>
+        </div>
+        
+       
+       
+        <!--for vnaya lable ko id ani tyo id type ma halyo vnae username ma thichda text enter garne ma jancha-->
+       <!-- <br>
+        <div class="remforg">
+            <lable><input type="checkbox">Remember me</lable>
+            <a href="#" id="fb">Forgot password?</a>
+        </div>-->
+        
+        <button type="submit" class="btn">Login</button>
+
+        <div class="register">
+            <p>Don't have an account<a href="register.html">Register</a></p>
+        </div>
+
+    </form>
+ 
+</div>
+ </body>
+</html>

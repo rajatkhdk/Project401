@@ -9,7 +9,7 @@
   list-style: none;
 
 }
-body {
+body{
   background:url(aa.jpeg)no-repeat;
   background-size: cover;
   height:calc(100vh -80px);
@@ -19,7 +19,7 @@ nav
 {
   height: 80px;
   width: 100%;
-  background: #315476;
+  background: #2f97bd;
   border-radius: 0px;
 }
 label.logo{
