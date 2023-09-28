@@ -62,12 +62,20 @@ button:hover {
   border-radius: 4px;
 }
 
-#name
+#fname
 {
   border-radius: 16px;
   background: transparent;
   border-color: rgb(138, 137, 137);
 }
+
+#lname
+{
+  border-radius: 16px;
+  background: transparent;
+  border-color: rgb(138, 137, 137);
+}
+
 #email
 {
   border-radius: 16px;
