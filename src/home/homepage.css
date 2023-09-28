@@ -5,12 +5,20 @@
    font-family: "Poppins","san-serif";
 
 }
+.r1
+{
+   width: 100%;
+}
+.r2
+{
+   width: 100%;
+}
 .hotel
 {
    margin: 15px;
    padding: 15px;
  display:inline-block;
- width: 350px;
+ width: 25%;
  
 }
 .hotel img
